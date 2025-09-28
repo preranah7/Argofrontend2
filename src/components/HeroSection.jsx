@@ -1,6 +1,6 @@
-// src/components/Hero.jsx - Fixed responsive layout for all screen sizes
+// src/components/Hero.jsx - Added GitHub links section
 import React, { useState, useEffect, useRef } from "react";
-import { FaArrowRight, FaPlay, FaQuoteLeft } from "react-icons/fa";
+import { FaArrowRight, FaPlay, FaQuoteLeft, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { HiSparkles } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ export default function Hero() {
         
         {/* Centered Pill - Enhanced responsive */}
         <div
-          className={`flex justify-center mb-12 transition-all duration-1000 ${
+          className={`flex justify-center mb-6 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -49,6 +49,41 @@ export default function Hero() {
               AI-Powered Ocean Intelligence
             </span>
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+          </div>
+        </div>
+
+        {/* NEW: GitHub Links Section */}
+        <div
+          className={`flex flex-col items-center mb-12 transition-all duration-1000 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          {/* Prototype Notice */}
+          <div className="text-center mb-4">
+            <p className="text-sm sm:text-base text-gray-300 font-medium mb-3">
+              This is a solution visualizing prototype (Yet to integrate backend)
+            </p>
+            
+            {/* GitHub Links */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+              <span className="text-sm text-gray-400 font-medium">GitHub Link(Frontend+Backend):</span>
+              
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a
+                  href=" https://github.com/Gsish/argofloat " // Replace with actual frontend repo
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg 
+                           bg-gray-800/50 hover:bg-gray-700/50 border border-gray-600/50 
+                           hover:border-gray-500/50 text-gray-300 hover:text-white 
+                           transition-all duration-200 text-sm"
+                >
+                  <FaGithub className="w-4 h-4" />
+                  <span>See Repository</span>
+                  <FaExternalLinkAlt className="w-3 h-3" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

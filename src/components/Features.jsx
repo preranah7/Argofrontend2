@@ -75,7 +75,7 @@ export default function CombinedFeatures() {
       title: "Smart Monitoring", 
       desc: "AI-powered alerts for ocean anomalies, heatwaves, and significant changes.",
       icon: <FaBolt />,
-      category: "Monitoring",
+      category: "Monitoring (Future Perspective)",
       colorTheme: {
         border: "ring-amber-500/30 hover:ring-amber-400/60",
         iconBg: "from-amber-500/20 to-orange-500/25",
@@ -88,7 +88,7 @@ export default function CombinedFeatures() {
       title: "Developer APIs", 
       desc: "Comprehensive APIs and SDKs for building custom oceanographic applications.",
       icon: <FaPlug />,
-      category: "Development",
+      category: "Development (Future Perspective)",
       colorTheme: {
         border: "ring-slate-500/30 hover:ring-slate-400/60",
         iconBg: "from-slate-500/20 to-gray-500/25",
