@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection";
 import CursorGlow from "../components/CursorGlow";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
-import MapContainer from "../components/MapContainer";
+
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Features />
-      <MapContainer/>
       <Footer />
     </div>
   );
