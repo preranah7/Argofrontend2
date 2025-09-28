@@ -10,7 +10,7 @@ export default function Upload() {
   const { chats, openChat, newChat, activeChat } = useChat();
 
   return (
-    <div className="h-screen w-screen flex bg-[#0B1622]">
+    <div className="h-screen w-screen flex bg-black">
       <Sidebar
         chats={chats}
         onNewChat={() => {
