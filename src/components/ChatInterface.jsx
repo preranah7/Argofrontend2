@@ -529,7 +529,7 @@ export default function ChatInterface({
       onAssistantMessage && onAssistantMessage(responseWithModel, targetChatId || undefined);
     } catch (err) {
       console.error("Failed to send query", err);
-      toast.error("Failed to send query");
+      //toast.error("Failed to send query");
 
       // Enhanced mock response - charts will be handled in BotResponseCard
       const mockResponse = {

@@ -114,7 +114,7 @@ export default function UploadContent() {
       setActiveTab("jobs");
     } catch (err) {
       console.error("Upload failed", err);
-      toast.error("Upload failed");
+      //toast.error("Upload failed");
       const time = new Date().toTimeString().slice(0, 5);
       setLogs((prev) => [...prev, `[${time}] Error: Upload failed`]);
       setRagStatus("error");
